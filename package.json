@@ -1,0 +1,23 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "Nodejs code snippets for re-use, design patterns, references.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "break": "node --inspect-brk index.js",
+    "inspect": "node --inspect index.js",
+    "watch": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.5.9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

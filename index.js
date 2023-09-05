@@ -1,3 +1,5 @@
+// Set a breakpoint using the debugger statement
+debugger;
 //default run file
 const capitalizeWithoutSpaces = (str) => { return str.split('').filter((char) => char.trim()).map((char) => char.toUpperCase()).join(''); };
 
@@ -49,7 +51,8 @@ const groupedByNameLength = groupBy(people, (person) => person.name.length);
 }
  */
 console.log(groupedByNameLength);
-
+// Set a breakpoint using the debugger statement
+debugger;
 //reverse a string
 const reverseString = (str) => str.split('').reverse().join('');
 const reverse = reverseString('javascript');
@@ -94,7 +97,8 @@ console.log(json);
 const jsonToMap = (json) => new Map(JSON.parse(json));
 const map2 = jsonToMap(json);
 console.log(map2); // Map { 'user1' => 'John', 'user2' => 'Kate', 'user3' => 'Peter' }
-
+// Set a breakpoint using the debugger statement
+debugger;
 //Convert a Set to JSON & vice versa
 const setToJson = (set) => JSON.stringify([...set]);
 const set = new Set(['John', 'Kate', 'Peter']);
@@ -120,7 +124,8 @@ const toTitleCase = (str) => str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUppe
 const titleCase = toTitleCase('javascript exercises');
 console.log(titleCase); // Javascript Exercises
 
-
+// Set a breakpoint using the debugger statement
+debugger;
 //Generate a random UUID
 const generateUUID = () => { return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => { const r = Math.random() * 16 | 0; const v = c == 'x' ? r : (r & 0x3 | 0x8); return v.toString(16); }); };
 const uuid = generateUUID();
@@ -172,6 +177,9 @@ const peopleB = [{ name: 'John', age: 21 }, { name: 'adam', age: 21 }, { name: '
 console.log(convert(peopleB, 'name', 'age'));
 // { John: 21, adam: 22 }
 // Using reduce() to convert an array of objects to a single object
+// Set a breakpoint using the debugger statement
+debugger;
+
 const convertA = (arr) => arr.reduce((acc, item) => { acc[item.id] = item; return acc; }, {});
 const peopleC = [{ id: 1, name: 'John', age: 21 }, { id: 2, name: 'adam', age: 21 }, { id: 3, name: 'adam', age: 22 }];
 console.log(convertA(peopleC));
@@ -197,7 +205,8 @@ const peopleG = [{ id: 1, name: 'John', age: 21 }, { id: 2, name: 'adam', age: 2
 console.log(groupByB(peopleG, 'age'));
 // { '21': [ { id: 1, name: 'John', age: 21 }, { id: 2, name: 'adam', age: 21 } ], '22': [ { id: 3, name: 'adam', age: 22 } ] }
 
-
+// Set a breakpoint using the debugger statement
+debugger;
 // Using reduce() to create a function pipeline
 const pipe = (...fns) => (x) => fns.reduce((y, f) => f(y), x);
 const add5 = (x) => x + 5;
@@ -213,4 +222,7 @@ console.log(multiplyAndAdd(5, 2)); // 12
 // Using reduce() to create a function that accepts a variable number of arguments
 const createSum = (...args) => args.reduce((acc, val) => acc + val, 0);
 console.log(createSum(1, 2, 3, 4, 5)); // 15
-
+// Set a breakpoint using the debugger statement
+debugger;
+// Start the Node.js application in debug mode
+// node --inspect app.js
